@@ -51,13 +51,11 @@ header img {
 .content {
   position: absolute;
   z-index: 1;
-  height: 100vh;
-  width: 100vw;
   margin: 0;
 }
 
 .title {
-  position: absolute;
+  position: relative;
   width: 700px;
   top: 300px;
   left: 0;
@@ -76,5 +74,42 @@ header img {
   color: var(--lg);
   text-shadow: 0 1px 1px #000;
   line-height: 2;
+}
+
+.social-row {
+  position: absolute;
+  display: inline-flex;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+  color(--lg);
+  width: 500px;
+  top: 550px;
+  left: 0;
+  transform: translate(47%, 0%);
+}
+
+.about {
+  position: absolute;
+  color: var(--wt);
+  top: 600px;
+  left: 230px;
+  padding: 15px 35px;
+  text-shadow: 0 1px 1px #000;
+  text-transform: uppercase;
+  font-size: 18px;
+  font-weight: 900;
+  text-align: left;
+  background-color: rgba(24, 24, 24, 0.8);
+  box-shadow: 0 7px 18px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+  border-radius: 5px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.5s, box-shadow 1s;
+}
+.about:hover {
+  background-color: rgba(24, 24, 24, 0.5);
+  transition: background-color 0.5s, box-shadow 1s;
 }
 
