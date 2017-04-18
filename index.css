@@ -1,24 +1,74 @@
 body {
-  background-color: var(--bl);
+  height: 100%;
+  width: 100%;
+  font-family: "fira-sans", sans-serif;
+}
+#root {
+  position: absolute;
+  z-index: 0;
+  width: 100vw;
+  height: 100vh;
+  background: url(./wave3.jpg) center no-repeat;
   color: var(--w);
-  font-family: "neuropol-nova", sans-serif;
   margin: 0;
+}
+#root:before {
+  content: '';
+  position: absolute;
+  z-index: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-image: linear-gradient(to bottom right, #181818,  #2F4C6F);
+  opacity: .9;
+  z-index: 0;
 }
 header {
-  background-color: var(--dg);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+  position: absolute;
   margin-top: 0;
-  padding: 20px 10px;
+  padding: 40px 10px;
   height: 100vh;
-  width: 150px;
+  z-index: 1;
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
 }
 
-h1 {
-  position: absolute;
-  background-color: var(--mb);
-  width: 175px;
-  padding: 20px;
-  color: var(--wt);
-  margin: 0;
-  left: 0;
-  /*box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);*/
+header img {
+  opacity: 0.8;
 }
+
+.content {
+  position: absolute;
+  z-index: 1;
+  height: 100vh;
+  width: 100vw;
+  margin: 0;
+}
+
+.title {
+  position: absolute;
+  width: 700px;
+  top: 300px;
+  left: 0;
+  transform: translate(33.33%, 0%);
+}
+.title h1 {
+  font-weight: 900;
+  font-size: 45px;
+  margin: 20px 0;
+  z-index: 4;
+  color: var(--wt);
+  text-shadow: 0 1px 1px #000;
+  text-transform: uppercase;
+}
+.title p {
+  color: var(--lg);
+  text-shadow: 0 1px 1px #000;
+  line-height: 2;
+}
+
