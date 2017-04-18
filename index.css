@@ -41,6 +41,12 @@ header {
 header img {
   opacity: 0.8;
 }
+.menu {
+  color: var(--lg);
+  font-size: 25px;
+  margin-top: calc(50vh - 100px);
+  flex: 1;
+}
 
 .content {
   position: absolute;
