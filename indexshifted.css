@@ -1,0 +1,40 @@
+.shifted {
+  font-family: "Inconsolata for Powerline", monospace;
+  color: var(--wt);
+}
+
+header.shifted {
+  transform: translate(calc(100vw - 70px), 0);
+  transition: all 1s ease;
+  z-index: 11;
+  background-color: var(--abl);
+}
+.wipe.shifted {
+  position: absolute;
+  transform: translate(0, 0);
+  left: 0;
+  background-color: var(--bl);
+  width: 100vw;
+  height: 100vh;
+  transition: all 1s ease;
+  z-index: 10;
+}
+
+.menu.shifted span:nth-child(1), .menu.shifted span:nth-child(3) {
+  transform: translate(0px, 13px) rotate(-45deg) scalex(1.3);
+  margin: 0;
+}
+.menu.shifted span:nth-child(2) {
+  height: 0;
+  margin: 0;
+}
+.menu.shifted span:nth-child(3) {
+  transform: translate(0px, 9px) rotate(45deg) scalex(1.3);
+}
+
+.menu.shifted span {
+  background: var(--dbx2);
+}
+.shifted .fa {
+  color: var(--dbx2);
+}

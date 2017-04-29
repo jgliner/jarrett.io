@@ -36,6 +36,33 @@ header {
   height: 100vh;
   z-index: 1;
   box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+  transform: translate(0,0);
+  transition: all 1s ease;
+  z-index: 11;
+  background-color: transparent;
+}
+
+.logo-wt {
+  display: initial;
+}
+.logo-wt.shifted {
+  display: none;
+}
+.logo-bl {
+  display: none;
+}
+.logo-bl.shifted {
+  display: initial;
+}
+
+.wipe {
+  position: absolute;
+  transform: translate(calc(-100vw + 70px), 0);
+  background-color: var(--bl);
+  width: calc(100vw - 70px);
+  height: 100vh;
+  transition: all 1s ease;
+  z-index: 10;
 }
 
 header img {
@@ -48,16 +75,28 @@ header img {
   outline: none !important;
   cursor: pointer !important;
 }
-.menu-button:hover .menu {
-  color: var(--wt);
-  transition: color 0.5s;
+.menu-button:hover .menu span {
+  background: var(--wt);
+  transition: all 0.5s;
 }
+
 .menu {
-  color: var(--lg);
-  font-size: 25px;
-  margin-top: calc(50vh - 100px);
+  cursor: pointer;
+  width: 25px;
+  height: 25px;
   flex: 1;
-  transition: color 0.5s;
+  transition: all 0.3s linear;
+}
+.menu span {
+  background: var(--lg);
+  display: block;
+  width: 25px;
+  height: 2px;
+  border-radius: 5px;
+  margin-bottom: 5px;
+  -webkit-transition: all 0.5s linear;
+  transition: all 0.3s linear;
+  transition: background 0.5s;
 }
 
 .content {
