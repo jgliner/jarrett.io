@@ -1,6 +1,11 @@
+/*menus, etc*/
 .shifted {
   font-family: "Inconsolata for Powerline", monospace;
   color: var(--wt);
+  font-size: 14px;
+  font-weight: 200;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 header.shifted {
@@ -38,3 +43,95 @@ header.shifted {
 .shifted .fa {
   color: var(--dbx2);
 }
+
+/*powerline*/
+.powerline {
+  height: 17px;
+}
+.powerline1 {
+  position: absolute;
+  background-color: var(--dbx2);
+  padding: 0 10px;
+  padding-right: 20px;
+  line-height: 1.25;
+  z-index: 13;
+}
+.powerline1:after,
+.powerline2:after,
+.powerline4:after {
+  content: "";
+  position: absolute;
+  display: inline-block;
+  width: 0;
+  height: 0;
+  margin-left: 10px;
+  border-style: solid;
+  border-width: 8.5px 0 8.5px 10px;
+  border-color: var(--dg) var(--dbx2) var(--dg) var(--dbx2);
+  z-index: 13;
+}
+.powerline2 {
+  position: absolute;
+  left: 128px;
+  margin-left: -12px;
+  color: var(--dbx2);
+  background-color: var(--dg);
+  padding: 0 30px;
+  padding-right: 20px;
+  line-height: 1.25;
+  z-index: 12;
+}
+.powerline2:after {
+  border-color: var(--abl) var(--dg) var(--abl) var(--dg);
+}
+.powerline3 {
+  position: absolute;
+  left: 190px;
+  margin-left: -20px;
+  color: var(--dbx2);
+  background-color: var(--abl);
+  padding: 0 30px;
+  padding-right: 20px;
+  line-height: 1.25;
+  z-index: 11;
+}
+.powerline3:after {
+  content: ">";
+  position: relative;
+  display: inline-block;
+  transform: scale(1,2);
+  left: 10px;
+}
+.powerline4 {
+  position: absolute;
+  left: 240px;
+  margin-left: -20px;
+  color: var(--dbx2);
+  background-color: var(--abl);
+  padding: 0 30px;
+  padding-right: 20px;
+  line-height: 1.25;
+  z-index: 10;
+}
+.powerline4:after {
+  border-color: var(--bl) var(--abl) var(--bl) var(--abl);
+}
+.powerline:after {
+  content: "";
+  position: relative;
+  left: 425px;
+  display: inline-block;
+  height: 17px;
+  width: 8px;
+  background-color: var(--wt);
+  z-index: 15;
+}
+.powerline5 {
+  position: absolute;
+  left: 345px;
+  top: 3px;
+}
+
+/* main content */
+
+
