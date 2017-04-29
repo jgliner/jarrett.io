@@ -9,6 +9,12 @@
   --wt: #FEFEFE;
 }
 
+.fa-envelope-o:hover {
+  background: linear-gradient(to bottom, #EA4335 0%,#EA4335 25%,#ffffff 26%,#ffffff 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: all 0.5s
+}
 
 .fa-linkedin:hover {
   background: linear-gradient(to bottom right, #283e4a 0%,#0077B5 50%,#0077B5 51%,#4d4d4d 100%);
