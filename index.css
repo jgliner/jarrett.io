@@ -82,12 +82,22 @@ header img {
   justify-content: space-between;
   align-items: center;
   align-content: center;
-  color(--lg);
   width: 500px;
   top: 550px;
   left: 0;
   transform: translate(47%, 0%);
 }
+
+.fa {
+  color: var(--lg);
+  line-height: 1 !important;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+.fa:hover {
+  transition: all 0.5s;
+}
+
 
 .about {
   position: absolute;
