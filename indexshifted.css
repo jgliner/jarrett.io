@@ -119,7 +119,7 @@ header.shifted {
 .powerline:after {
   content: "";
   position: relative;
-  left: 425px;
+  left: 420px;
   display: inline-block;
   height: 17px;
   width: 8px;
@@ -130,6 +130,11 @@ header.shifted {
   position: absolute;
   left: 345px;
   top: 3px;
+}
+.powerline6 {
+  position: absolute;
+  left: 0;
+  top: 20px;
 }
 
 /* main content */
