@@ -14,15 +14,7 @@
 <body>
   <div id="root"></div>
   <div class="wipe">
-    <div class="powerline">
-      <span class="powerline1"></span>
-      <span class="powerline2">user</span>
-      <span class="powerline3">...</span>
-      <span class="powerline4">jarrett.io</span>
-    </div>
-    <div class="powerline5">./about-me</div>
-
-    <div class="powerline6">./about-me: Coming Soon!</div>
+    
   </div>
   <header class="">
     <img class="logo-wt" src="./logoinverted.png" width="50px" />
@@ -52,8 +44,9 @@
         <a href="http://stackoverflow.com/users/2574317/jarrett-g" target="newtab"><i class="fa social fa-stack-exchange fa-lg" aria-hidden="true"></i></a>
         <a href="https://github.com/jgliner" target="newtab"><i class="fa social fa-github fa-lg" aria-hidden="true"></i></a>
       </div>
+      <hr>
       <div class="about-container">
-        <button class="about expand">About Me</button>
+        <button class="about expand">Resume</button>
       </div>
     </div>
   </div>
@@ -67,7 +60,6 @@
         document.getElementsByClassName('logo-wt')[0].classList.toggle('shifted');
         document.getElementsByClassName('logo-bl')[0].classList.toggle('shifted');
         document.getElementById('root').classList.toggle('shifted');
-        document.getElementsByClassName('powerline1')[0].textContent = `[ ${new Date().toLocaleString('en-US', { hour: '2-digit', minute: '2-digit', second: '2-digit', hour12: true }) } ]`;
       })
     })
   </script>

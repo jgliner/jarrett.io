@@ -249,16 +249,6 @@ header img {
     left: 45px;
     width: calc(100vw - 45px);
   }
-  .powerline2,
-  .powerline3 {
-    display: none;
-  }
-  .powerline4 {
-    left: 128px;
-  }
-  .powerline5 {
-    left: 230px;
-  }
 }
 
 
