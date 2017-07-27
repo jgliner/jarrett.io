@@ -14,12 +14,37 @@
 <body>
   <div id="root"></div>
   <div class="wipe">
-    <div class="resume"></div>
+    <div class="resume-header">
+      <div class="resume-details">
+        <div class="resume-details-top">
+          <h2 class="resume-name">Jarrett Gliner</h2>
+          <p>
+            Software Engineer
+            <span class="resume-inline-spacer">|</span>
+            San Francisco, CA
+          </p>
+        </div>
+        <div class="resume-details-bottom">
+          <p>
+            <icon class="fa fa-github"></icon>
+            <a href="http://github.com/jgliner">github.com/jgliner</a>
+          </p>
+          <p>
+            <icon class="fa fa-angellist"></icon>
+            <a href="http://linkedin.com/in/jgliner">linkedin.com/in/jgliner</a>
+          </p>
+          <p>
+            <icon class="fa fa-envelope-o"></icon>
+            <a rel="noopener noreferrer" href="mailto:jarrett.gliner@gmail.com" target="_top">jarrett.gliner@gmail.com</icon></a>
+          </p>
+        </div>
+      </div>
+    </div>
   </div>
   <header class="">
     <img class="logo-wt" src="./logoinverted.png" width="50px" />
     <img class="logo-bl" src="./logoblue.png" width="50px" />
-    <button class="menu-button shifted expand">
+    <button class="menu-button expand">
       <div class="menu">
         <span></span>
         <span></span>
@@ -62,6 +87,7 @@
       document.getElementsByTagName('header')[0].classList.toggle('shifted');
       document.getElementsByClassName('wipe')[0].classList.toggle('shifted');
       document.getElementsByClassName('menu')[0].classList.toggle('shifted');
+      document.getElementsByClassName('content')[0].classList.toggle('shifted');
       document.getElementById('root').classList.toggle('shifted');
     }
     if (window.location.search.match('resume')) {

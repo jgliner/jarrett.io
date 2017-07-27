@@ -1,14 +1,11 @@
 /*menus, etc*/
-.shifted {
-  font-size: 14px;
-  font-weight: 200;
-}
 
 header.shifted {
   transform: translate(calc(100vw - 70px), 0);
-  transition: all 1s ease;
+  transition: transform 1s ease;
   z-index: 11;
-  background-color: var(--db);
+  background-color: var(--abl);
+  box-shadow: none;
 }
 header.shifted img {
   opacity: 1;
@@ -44,3 +41,67 @@ header.shifted img {
 }
 
 /* --- CONTENT ----- */
+
+/* HEADER */
+
+.resume-header {
+  width: calc(100vw - 70px);
+  padding: 30px 100px;
+  padding-bottom: 20px;
+  height: 175px;
+  background-color: var(--db);
+  text-align: center;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+.resume-details {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-size: 14px;
+  width: 100%;
+  height: 100%;
+  z-index: 4;
+  color: var(--wt);
+}
+
+.resume-details-top {
+  width: 100%;
+  font-size: 16px;
+  font-weight: 300;
+}
+.resume-name {
+  margin-bottom: 5px;
+  font-weight: 400;
+  font-size: 45px;
+  z-index: 4;
+  font-variant: small-caps;
+}
+
+.resume-details-bottom {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  line-height: 2;
+  font-weight: 100;
+}
+
+.resume-details-bottom p,
+.resume-details-bottom a {
+  font-size: 16px;
+  width: 100%;
+  color: var(--wt);
+  text-decoration: none;
+}
+.resume-details-bottom p {
+  cursor: pointer !important;
+}
+.resume-details-bottom icon {
+  margin: 0 5px;
+  font-size: 18px;
+  text-shadow: none;
+}
+
+
+

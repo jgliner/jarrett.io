@@ -33,7 +33,7 @@ header {
   justify-content: space-between;
   align-items: center;
   align-content: center;
-  position: absolute;
+  position: fixed;
   margin-top: 0;
   padding: 40px 10px;
   height: 100vh;
@@ -61,7 +61,7 @@ header {
 .wipe {
   position: absolute;
   transform: translate(calc(-100vw + 70px), 0);
-  background-color: var(--bl);
+  background-color: var(--mg);
   width: calc(100vw - 70px);
   height: 100vh;
   transition: all 1s ease;
@@ -103,6 +103,7 @@ header img {
 }
 
 .content {
+  opacity: 1;
   z-index: 5;
   position: absolute;
   display: flex;
@@ -111,6 +112,7 @@ header img {
   left: 70px;
   height: 100vh;
   width: calc(100vw - 70px);
+  animation: disappear 0.1s;
 }
 
 /* TITLE */
