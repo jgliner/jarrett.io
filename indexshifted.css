@@ -128,9 +128,7 @@ header.shifted img {
 
 .resume-body {
   font-family: helvetica;
-  padding-top: 20px;
-  padding-right: 100px;
-  padding-left: 50px;
+  padding: 40px 50px;
   line-height: 2;
   font-size: 14px;
 }
