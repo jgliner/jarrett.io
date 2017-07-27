@@ -132,32 +132,66 @@ header.shifted img {
   padding-right: 100px;
   padding-left: 50px;
   line-height: 2;
+  font-size: 14px;
 }
 .resume-body h4 {
   display: inline-block;
+  margin-bottom: 10px;
+  font-size: 16px
+}
+.resume-sub-title {
+  font-size: 16px;
+  display: inline-block;
+  font-weight: 600;
+  color: var(--mg);
+}
+.resume-inline-detail {
+  color: var(--lg);
+  font-size: 12px;
+}
+.resume-inline-detail-rt {
+  color: var(--lg);
+  font-style: italic;
+  padding-right: 20px;
+  text-align: right;
 }
 .resume-hr {
-  /*margin: 0;*/
   border-bottom: none;
   border-style: solid;
   border-color: var(--aw);
   border-width: 1px;
 }
 
+/* -- SKILLS */
 .resume-skills {
-  line-height: 1.5;
+  line-height: 2;
   margin-left: 20px;
 }
 .resume-skills b {
   display: inline-block;
-  font-weight: 600;
-  color: var(--lg);
-  font-size: 14px;
-  width: 83px;
 }
 .resume-skills p {
-  font-size: 14px;
   margin-left: 10px;
 }
 
+/* -- EXP */
+.resume-experience-container {
+  display: flex;
+  align-content: center;
+  align-items: center;
+  margin-left: 20px;
+  width: 100%;
+}
+.resume-experience-title {
+  display: flex;
+  align-content: center;
+  align-items: center;
+  justify-content: space-between;
+  margin-left: 15px;
+  line-height: 1.25;
+  width: 100%;
+}
+.resume-experience-title div span:nth-child(2) {
+  color: var(--lg);
+}
 
