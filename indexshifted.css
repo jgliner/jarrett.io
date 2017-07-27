@@ -1,4 +1,7 @@
 /*menus, etc*/
+body.shifted {
+  overflow: visible;
+}
 
 header.shifted {
   transform: translate(100vw, 0);
@@ -37,6 +40,13 @@ header.shifted img {
   background: var(--wt);
 }
 
+.li2 {
+  margin-left: 25px;
+}
+
+/* --- CONTENT ----- */
+
+/* HEADER */
 .resume-expand,
 .resume-pdf {
   background: none;
@@ -57,10 +67,6 @@ header.shifted img {
   top: 20px;
   font-size: 18px;
 }
-
-/* --- CONTENT ----- */
-
-/* HEADER */
 
 .shifted .resume-header {
   width: 100vw;
@@ -203,6 +209,9 @@ header.shifted img {
 }
 .resume-section-body ul {
   line-height: 1.5;
+}
+.resume-section-body li {
+  margin-top: 10px;
 }
 
 /* -- OSS */

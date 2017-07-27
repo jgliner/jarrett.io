@@ -2,6 +2,7 @@ body {
   height: 100%;
   width: 100%;
   font-family: "fira-sans", sans-serif;
+  overflow: hidden;
 }
 #root {
   position: absolute;
@@ -11,6 +12,7 @@ body {
   background: url(./wave3.jpg) center no-repeat;
   color: var(--w);
   margin: 0;
+  overflow: hidden;
 }
 #root:before {
   content: '';
@@ -295,47 +297,3 @@ header img {
     margin-bottom: 20px;
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

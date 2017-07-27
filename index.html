@@ -61,7 +61,7 @@
             <img src="assets/stagegg.png" width="40px" height="40px" />
             <div class="resume-section-title">
               <div>
-                <span class="resume-sub-title">Stage.GG</span>
+                <a href="https://stage.gg" class="resume-sub-title">Stage.GG</a>
                 <span class="resume-inline-spacer">|</span>
                 <span class="resume-sub-title">Lead Engineer</span>
                 <br>
@@ -72,7 +72,20 @@
           </div>
           <div class="resume-section-body">
             <ul>
-              <li>Architected and built out (and continuing to build on) a fully isomorphic React+Redux stack with a Node+Express API backend</li>
+              <li>Architected and built out a fully isomorphic Node + React + Redux + Webpack stack with server-side rendering on a dedicated frontend server</li>
+              <li>Architected and built out a dedicated Node + Restify API backend (including raw MySQL queries executed via Seqielize ORM) that serves the frontend, as well as third-party partners on public endpoints</li>
+              <li>Created and maintained a build / release pipeline with AWS Elastic Beanstalk and Nginx</li>
+              <li>Grew traffic from launch to 100k uniques/mo on a single t2.micro AWS EC2 instance with very little downtime
+                <ul>
+                  <li class="li2">Also used Cloudflare and an AWS S3 CDN to host static content</li>
+                </ul>
+              </li>
+              <li>Integrated a custom Wordpress admin frontend that hooked into our MySQL DB to serve Editorial Content directly to the site
+                <ul>
+                  <li class="li2">Used Nginx to forward PHP requests to Apache so that Wordpress's admin could be hosted on a single instance alongside the primary frontend, dramatically cutting server costs</li>
+                </ul>
+              </li>
+              <li>Mentored interns, implemented a code review process, served as "gatekeeper" of the comapny's Git repository hosted on Bitbucket</li>
             </ul>
           </div>
         </div>
@@ -127,8 +140,8 @@
           </div>
         </div>
       </div>
-
       <hr class="resume-hr">
+
       <h4>Personal Projects</h4>
       <div class="resume-section">
         <div class="resume-section-container">
@@ -136,7 +149,7 @@
             <img src="assets/opendoor.png" width="40px" height="40px" />
             <div class="resume-section-title">
               <div>
-                <span class="resume-sub-title">OpenDoor</span>
+                <a href="https://github.com/preposterousCloud/open-door" class="resume-sub-title">OpenDoor</a>
                 <span class="resume-inline-spacer">|</span>
                 <span class="resume-sub-title">Software Engineer / Scrum Master</span>
                 <br>
@@ -168,7 +181,7 @@
             <img src="assets/lunchtrain.png" width="40px" height="40px" />
             <div class="resume-section-title">
               <div>
-                <span class="resume-sub-title">LunchTrain</span>
+                <a href="https://github.com/platonicNavel/lunchtrain" class="resume-sub-title">LunchTrain</a>
                 <span class="resume-inline-spacer">|</span>
                 <span class="resume-sub-title">Software Engineer</span>
                 <br>
@@ -190,9 +203,9 @@
           </div>
         </div>
       </div>
-      <hr class="resume-hr">
     </div>
   </div>
+
   <header class="">
     <img class="logo-wt" src="./logoinverted.png" width="50px" />
     <button class="menu-button expand">
@@ -235,17 +248,19 @@
 
   <script type="text/javascript">
     function shiftMenu() {
+      document.getElementsByTagName('body')[0].classList.toggle('shifted');
+      document.getElementById('root').classList.toggle('shifted');
       document.getElementsByTagName('header')[0].classList.toggle('shifted');
       document.getElementsByClassName('wipe')[0].classList.toggle('shifted');
       document.getElementsByClassName('menu')[0].classList.toggle('shifted');
       document.getElementsByClassName('content')[0].classList.toggle('shifted');
-      document.getElementById('root').classList.toggle('shifted');
     }
     if (window.location.search.match('resume')) {
       shiftMenu();
     }
     Array.from(document.getElementsByClassName('expand')).forEach((el) => {
       el.addEventListener('click', () => {
+        window.scrollTo(0,0);
         shiftMenu();
       })
     })
