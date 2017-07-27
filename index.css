@@ -45,19 +45,6 @@ header {
   background-color: transparent;
 }
 
-.logo-wt {
-  display: initial;
-}
-.logo-wt.shifted {
-  display: none;
-}
-.logo-bl {
-  display: none;
-}
-.logo-bl.shifted {
-  display: initial;
-}
-
 .wipe {
   position: absolute;
   transform: translate(calc(-100vw + 70px), 0);

@@ -1,7 +1,7 @@
 /*menus, etc*/
 
 header.shifted {
-  transform: translate(calc(100vw - 70px), 0);
+  transform: translate(100vw, 0);
   transition: transform 1s ease;
   z-index: 11;
   background-color: var(--abl);
@@ -40,12 +40,33 @@ header.shifted img {
   color: var(--wt);
 }
 
+.resume-expand,
+.resume-pdf {
+  background: none;
+  border: none;
+  outline: none !important;
+  cursor: pointer !important;
+  position: absolute;
+  color: var(--wt);
+}
+
+.resume-expand {
+  right: 20px;
+  top: 20px;
+  font-size: 20px;
+}
+.resume-pdf {
+  left: 20px;
+  top: 20px;
+  font-size: 18px;
+}
+
 /* --- CONTENT ----- */
 
 /* HEADER */
 
-.resume-header {
-  width: calc(100vw - 70px);
+.shifted .resume-header {
+  width: 100vw;
   padding: 30px 100px;
   padding-bottom: 20px;
   height: 175px;
