@@ -124,5 +124,40 @@ header.shifted img {
   text-shadow: none;
 }
 
+/* BODY */
+
+.resume-body {
+  font-family: helvetica;
+  padding-top: 20px;
+  padding-right: 100px;
+  padding-left: 50px;
+  line-height: 2;
+}
+.resume-body h4 {
+  display: inline-block;
+}
+.resume-hr {
+  /*margin: 0;*/
+  border-bottom: none;
+  border-style: solid;
+  border-color: var(--aw);
+  border-width: 1px;
+}
+
+.resume-skills {
+  line-height: 1.5;
+  margin-left: 20px;
+}
+.resume-skills b {
+  display: inline-block;
+  font-weight: 600;
+  color: var(--lg);
+  font-size: 14px;
+  width: 83px;
+}
+.resume-skills p {
+  font-size: 14px;
+  margin-left: 10px;
+}
 
 
