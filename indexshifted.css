@@ -1,24 +1,23 @@
 /*menus, etc*/
 .shifted {
-  font-family: "Inconsolata for Powerline", monospace;
-  color: var(--wt);
   font-size: 14px;
   font-weight: 200;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
 }
 
 header.shifted {
   transform: translate(calc(100vw - 70px), 0);
   transition: all 1s ease;
   z-index: 11;
-  background-color: var(--abl);
+  background-color: var(--db);
+}
+header.shifted img {
+  opacity: 1;
 }
 .wipe.shifted {
   position: absolute;
   transform: translate(0, 0);
   left: 0;
-  background-color: var(--bl);
+  background-color: var(--wt);
   width: 100vw;
   height: 100vh;
   transition: all 1s ease;
@@ -38,8 +37,10 @@ header.shifted {
 }
 
 .menu.shifted span {
-  background: var(--dbx2);
+  background: var(--wt);
 }
 .shifted .fa {
-  color: var(--dbx2);
+  color: var(--wt);
 }
+
+/* --- CONTENT ----- */

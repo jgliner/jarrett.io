@@ -14,7 +14,7 @@
 <body>
   <div id="root"></div>
   <div class="wipe">
-    
+    <div class="resume"></div>
   </div>
   <header class="">
     <img class="logo-wt" src="./logoinverted.png" width="50px" />
@@ -58,14 +58,18 @@
   </div>
 
   <script type="text/javascript">
+    function shiftMenu() {
+      document.getElementsByTagName('header')[0].classList.toggle('shifted');
+      document.getElementsByClassName('wipe')[0].classList.toggle('shifted');
+      document.getElementsByClassName('menu')[0].classList.toggle('shifted');
+      document.getElementById('root').classList.toggle('shifted');
+    }
+    if (window.location.search.match('resume')) {
+      shiftMenu();
+    }
     Array.from(document.getElementsByClassName('expand')).forEach((el) => {
       el.addEventListener('click', () => {
-        document.getElementsByTagName('header')[0].classList.toggle('shifted');
-        document.getElementsByClassName('wipe')[0].classList.toggle('shifted');
-        document.getElementsByClassName('menu')[0].classList.toggle('shifted');
-        document.getElementsByClassName('logo-wt')[0].classList.toggle('shifted');
-        document.getElementsByClassName('logo-bl')[0].classList.toggle('shifted');
-        document.getElementById('root').classList.toggle('shifted');
+        shiftMenu();
       })
     })
   </script>
