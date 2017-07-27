@@ -36,9 +36,6 @@ header.shifted img {
 .menu.shifted span {
   background: var(--wt);
 }
-.shifted .fa {
-  color: var(--wt);
-}
 
 .resume-expand,
 .resume-pdf {
@@ -73,6 +70,9 @@ header.shifted img {
   background-color: var(--db);
   text-align: center;
   box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+.resume-header .fa {
+  color: var(--wt);
 }
 .resume-details {
   display: flex;
@@ -203,6 +203,12 @@ header.shifted img {
 }
 .resume-section-body ul {
   line-height: 1.5;
+}
+
+/* -- OSS */
+.fa.fa-github.resume-section-oss {
+  font-size: 40px !important;
+  color: var(--bl);
 }
 
 /* -- PROJECTS */

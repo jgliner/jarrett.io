@@ -13,50 +13,50 @@
   --wt: #FEFEFE;
 }
 
-.fa-envelope-o:hover {
+.content .fa-envelope-o:hover {
   background: linear-gradient(to bottom, #EA4335 0%,#EA4335 25%,#ffffff 26%,#ffffff 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   transition: all 0.5s
 }
 
-.fa-linkedin:hover {
+.content .fa-linkedin:hover {
   background: linear-gradient(to bottom right, #283e4a 0%,#0077B5 50%,#0077B5 51%,#4d4d4d 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   transition: all 0.5s
 }
-.fa-twitter:hover {
+.content .fa-twitter:hover {
   background: linear-gradient(to bottom right, #283e4a 0%,#55acee 50%,#55acee 51%,#4d4d4d 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   transition: all 0.5s
 }
-.fa-google:hover {
+.content .fa-google:hover {
   background: linear-gradient(to bottom right, #4285f4 0%,#34a853 50%,#fbbc05 51%,#ea4335 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   transition: all 0.5s
 }
-.fa-angellist:hover {
+.content .fa-angellist:hover {
   background: linear-gradient(to bottom right, #ffffff 0%,#ffffff 50%,#ffffff 51%,#ffffff 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   transition: all 0.5s
 }
-.fa-medium:hover {
+.content .fa-medium:hover {
   background: linear-gradient(to bottom right, #02b875 0%,#02b875 50%,#20f37d 51%,#20f37d 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   transition: all 0.5s
 }
-.fa-stack-exchange:hover {
+.content .fa-stack-exchange:hover {
   background: linear-gradient(to bottom, #F48024 0%,#F48024 50%,#bcbbbb 51%,#bcbbbb 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   transition: all 0.5s
 }
-.fa-github:hover {
+.content .fa-github:hover {
   background: radial-gradient(ellipse at center, #000000 0%,#aaaaaa 50%,#cccccc 51%,#ffffff 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
