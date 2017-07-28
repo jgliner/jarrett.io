@@ -7,7 +7,6 @@ header.shifted {
   transform: translate(100vw, 0);
   transition: transform 1s ease;
   z-index: 11;
-  background-color: var(--abl);
   box-shadow: none;
 }
 header.shifted img {
@@ -54,12 +53,15 @@ header.shifted img {
   outline: none !important;
   cursor: pointer !important;
   position: absolute;
+}
+.resume-expand icon,
+.resume-pdf icon {
   color: var(--wt);
 }
 
 .resume-expand {
   right: 20px;
-  top: 20px;
+  top: 15px;
   font-size: 20px;
 }
 .resume-pdf {
@@ -230,3 +232,57 @@ header.shifted img {
   font-size: 12px;
 }
 
+@media (max-width: 820px) {
+  .shifted .resume-header {
+    padding-top: 15px;
+  }
+  .resume-details-bottom {
+    padding: 0;
+    flex-direction: column;
+    line-height: 1.25;
+  }
+}
+
+@media (max-width: 720px) {
+  .resume-body {
+    font-size: 12px;
+  }
+  .resume-body h4 {
+    font-size: 14px
+  }
+  .shifted .resume-header {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .resume-name {
+    font-size: 35px;
+  }
+  .resume-details {
+    font-size: inherit;
+  }
+  .resume-details-top p {
+    font-size: 12px;
+  }
+  .resume-details-bottom {
+    padding: 0;
+    flex-direction: column;
+    line-height: 1.25;
+  }
+  .resume-details-bottom a,
+  .resume-details-bottom icon {
+    font-size: 12px;
+  }
+
+  .resume-section-body {
+    padding: 0;
+  }
+  .resume-sub-title {
+    font-size: 14px;
+  }
+  .resume-inline-detail {
+    font-size: 10px;
+  }
+  .resume-inline-detail-rt {
+    display: none;
+  }
+}
