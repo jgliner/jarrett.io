@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jarrett Gliner | Full-Stack Software Engineer</title>
+  <link rel="icon" href="favicon.ico">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@100..900&family=Inconsolata:wght@200..900&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: "Hanken Grotesk";
+      color: #D6D6D6;
+      display: flex;
+      flex-direction: column;
+      margin: 0;
+      padding: 0;
+      height: 100vh;
+      width: 100vw;
+      overflow: hidden;
+      background: #1C1C1C;
+    }
+
+    #monogram {
+      position: absolute;
+      top: 20px;
+      left: 30px;
+      height: 50px;
+      mix-blend-mode: difference;
+    }
+
+    #bigtext {
+      position: relative;
+      transition: all 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+      transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 25, 0, 0, 1);
+      font-size: clamp(16vw, 18.5vw, 18.5vw);
+      font-weight: 500;
+      letter-spacing: -10.1px;
+      line-height: 225px;
+      max-width: 100vw;
+      overflow: hidden;
+      white-space: nowrap;
+      padding-bottom: 42px;
+      z-index: -1;
+    }
+
+    #main {
+      height: 100%;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      align-content: center;
+    }
+
+    .pane {
+      height: 100%;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      align-content: center;
+    }
+
+    #bigtext-side {
+      position: absolute;
+      z-index: -1;
+      color: #2E2E2E;
+      transform: rotate(270deg);
+      font-family: "Inconsolata";
+      font-weight: 900;
+      font-size: clamp(4vw, 8vw, 6vw);
+      text-wrap: nowrap;
+      left: clamp(-16vw, -23vw, -21vw);
+    }
+
+    #left img::before {
+      display: block;
+      position: absolute;
+      z-index: 100000;
+      content: "";
+      width: 100px;
+      height: 100px;
+      background-color: blue;
+      left: 0;
+      top: 0;
+    }
+    #left img {
+      object-fit: contain;
+      width: 100%;
+      filter: saturate(0);
+      padding: 0 15%;
+    }
+
+    #right {
+      justify-content: flex-end;
+    }
+    #right table {
+      border-collapse: collapse;
+      font-size: 2.5vw;
+      font-weight: 500;
+      width: 90%;
+      border-top: 5px solid #D6D6D6;
+      border-bottom: 5px solid #D6D6D6;
+      margin-right: 2vw;
+    }
+    #right table tr {
+      border-top: 1px solid #D6D6D6;
+      border-bottom: 1px solid #D6D6D6;
+    }
+    #right table tr:hover {
+      cursor: pointer;
+    }
+    #right table tr td {
+      left: 0;
+      position: relative;
+      padding-top: 1vw;
+      padding-bottom: 7vw;
+      transition: all 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+      filter: invert(0%);
+    }
+    #right table tr:hover td {
+      filter: invert(50%);
+      left: 1vw;
+    }
+    #right table tr td:last-child {
+      text-align: center;
+    }
+    .icon {
+      height: 2.5vw;
+    }
+  </style>
+</head>
+<body>
+  <img id="monogram" src="monogram.svg">
+  <div id="bigtext">Coming Soon</div>
+  <div id="main">
+    <div class="pane" id="left">
+      <span id="bigtext-side">JARRETT GLINER</span>
+      <img src="geo_nz.jpg">
+    </div>
+    <div class="pane" id="right">
+      <table>
+        <tr data-href="https://www.linkedin.com/in/jgliner/"><td>LinkedIn</td><td><img class="icon" src="li.svg"></td></tr>
+        <tr data-href="https://github.com/jgliner"><td>GitHub</td><td><img class="icon" src="gh.svg"></td></tr>
+        <tr data-href="mailto:jarrett.gliner@gmail.com"><td>Email</td><td><img class="icon" src="email.svg"></td></tr>
+      </table>
+    </div>
+  </div>
+  <script>
+    window.addEventListener('mousemove', (e) => {
+      document.getElementById('bigtext').style.transform = `matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, ${Math.log(e.clientX * e.clientX) * 2}, 0, 0, 1)`;
+    })
+    Array.from(document.querySelectorAll('tr')).forEach((tr) => {
+      tr.addEventListener('mousedown', (e) => {
+        window.open(e.currentTarget.dataset.href);
+      })
+    });
+  </script>
+</body>
+</html>
